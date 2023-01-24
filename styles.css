@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'DS-Digital', sans-serif;;
+    src: url('https://fonts.cdnfonts.com/css/ds-digital');
+  }
+  
+body {
+    display: flex;
+    gap: 20px;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(85, 85, 85);
+    color: rgb(61, 61, 61);
+}
+
+div {
+    padding: 20px;
+    font-family: 'DS-Digital';
+}
+
+button {
+    padding: 20px;
+    font-size: 30pt;
+    height: 100%;
+    border: .005px dashed rgba(0, 0, 0, 0.082);
+    background-color: rgb(218, 218, 218);
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    font-family: 'DS-Digital';
+}
+
+button:hover {
+    border: 3px solid rgba(255, 255, 255, 0.623);
+}
+
+button:active {
+    background-color: rgb(238, 238, 238);;
+}
+
+#controls{
+    background-color: rgb(238, 238, 238);;
+    border-color: bisque;
+    display: flex;
+    flex-direction: column;
+    width:400px;
+}
+
+.header{
+    font-size: 24pt;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+.spacer{
+    width: 400px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-auto-rows: 100px 100px 100px 100px 100px 100px ;
+    width: 400px;
+    text-align: center; 
+    align-items: center;
+    align-self: center;
+    padding: 0px;
+    gap: 0px;
+    grid-template-areas: 
+    "display display display display"
+    "clear sign percentage divide"
+    "seven eight nine multiplication"
+    "four five six subtraction"
+    "one two three addition"
+    "zeroth zeroth period operate";
+}
+
+#display {
+    grid-area: display;
+    font-size: 60pt;
+    background-color: rgb(230, 230, 230);
+    text-align: end;
+}
+
+#clear {
+    grid-area: clear;
+    background-color: #ffa600;
+}
+
+#sign {grid-area: sign;}
+#percentage {grid-area: percentage;}
+#multiplication {grid-area: multiplication;}
+#divide {grid-area: divide;}
+#subtraction {grid-area: subtraction;}
+#addition {grid-area: addition;}
+#operate {grid-area: operate;}
+
+.one {grid-area: one;}
+.two {grid-area: two;}
+.three {grid-area: three;}
+.four {grid-area: four;}
+.five {grid-area: five;} 
+.six {grid-area: six;} 
+.seven {grid-area: seven;} 
+.eight {grid-area: eight;} 
+.nine {grid-area: nine;} 
+.zero {grid-area: zeroth;} 
+.period {grid-area: period;}
